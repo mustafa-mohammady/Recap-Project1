@@ -1,0 +1,33 @@
+.show-answer {
+  padding: 10px;
+  background: darkorange;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.show-answer:hover {
+  background-color: orange;
+}
+.answer-toggle {
+  display: none;
+}
+
+.answer {
+  display: none;
+}
+
+.answer-toggle:checked ~ .answer {
+  display: block;
+}
+.answer-toggle:checked ~ .answer_title {
+  display: none;
+}
+
+.q_bookmark_icon {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  font-size: 32px;
+}

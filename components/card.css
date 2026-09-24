@@ -1,0 +1,11 @@
+.question-card {
+  position: relative;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  height: 200px;
+  z-index: -1;
+}

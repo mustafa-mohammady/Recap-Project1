@@ -1,0 +1,109 @@
+@import url("./global.css");
+@import url("./components/header.css");
+@import url("./components/card.css");
+@import url("./components/button.css");
+@import url("./components/navigation.css");
+
+main {
+  flex: 1;
+  padding: 20px;
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+
+.categories {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  position: relative;
+  margin: 10px;
+  z-index: -1;
+}
+.categories li {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.categories li:hover {
+  color: white;
+  background-color: black;
+}
+
+.profile_top_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.profile_img {
+  width: 40%;
+}
+.profile_name {
+  text-align: center;
+  width: 60%;
+}
+
+.about_me_container {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.about_me_container > p {
+  text-align: left;
+}
+
+.profile_bottom_container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.profile_bottom_container > button {
+  padding: 10px;
+  border: none;
+  background-color: orangered;
+  color: white;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+#theme-toggle {
+  display: none;
+}
+.switch::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  top: 3px;
+  left: 3px;
+  transition: 0.3s;
+}
+
+.switch {
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  background: #ccc;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+#theme-toggle:checked + .switch {
+  background-color: goldenrod;
+}
+#theme-toggle:checked + .switch::before {
+  transform: translateX(24px);
+}

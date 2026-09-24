@@ -1,0 +1,17 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "Quiz App",
+  "license": "ISC",
+  "author": "Mustafa Mohammady",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx -y live-server@latest --port=3000"
+  },
+  "dependencies": {
+    "lucide": "^1.47.0"
+  },
+  "devDependencies": {}
+}

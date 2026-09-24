@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="quiz-title">Quiz App</h1>
+    </header>
+    <main>
+      <div class="question-card">
+        <i class="fa-regular fa-bookmark q_bookmark_icon"></i>
+        <h2>What does CSS stand for?</h2>
+        <input type="checkbox" id="answer-1" class="answer-toggle" />
+        <span class="answer_title">Answer:</span>
+        <p class="answer"><span>Answer:</span> Cascading Style Sheets</p>
+        <label for="answer-1" class="show-answer">Show Answer</label>
+        <ul class="categories">
+          <li>html</li>
+          <li>css</li>
+          <li>flexbox</li>
+        </ul>
+      </div>
+      <div class="question-card">
+        <i class="fas fa-bookmark q_bookmark_icon"></i>
+        <h2>What is the default display property for most HTML elements?</h2>
+        <input type="checkbox" id="answer-2" class="answer-toggle" />
+        <p class="answer">Answer: block</p>
+        <label for="answer-2" class="show-answer">Show Answer</label>
+        <ul class="categories">
+          <li>html</li>
+          <li>css</li>
+          <li>flexbox</li>
+        </ul>
+      </div>
+      <div class="question-card">
+        <i class="fas fa-bookmark q_bookmark_icon"></i>
+        <h2>What is the purpose of the HTML div element?</h2>
+        <input type="checkbox" id="answer-2" class="answer-toggle" />
+        <p class="answer">
+          Answer: It is a container element used to group and style content
+          together.
+        </p>
+        <label for="answer-2" class="show-answer">Show Answer</label>
+        <ul class="categories">
+          <li>html</li>
+          <li>css</li>
+          <li>flexbox</li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <ul class="mobile-menu">
+        <li class="active">
+          <a href="index.html">
+            <span class="fas fa-home menu-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a href="bookmarks.html">
+            <span class="fas fa-bookmark menu-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html">
+            <span class="fas fa-user menu-icon"></span>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

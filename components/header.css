@@ -1,0 +1,18 @@
+header {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: blueviolet;
+}
+
+.quiz-title {
+  font-size: 32px;
+  vertical-align: middle;
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px gold;
+}
