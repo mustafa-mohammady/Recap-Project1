@@ -7,12 +7,13 @@ header {
   flex-direction: column;
   justify-content: center;
   background-color: blueviolet;
+  z-index: 10;
 }
 
 .quiz-title {
   font-size: 32px;
   vertical-align: middle;
   padding: 20px;
-  color: white;
+  color: var(--text-white);
   text-shadow: 2px 2px 4px gold;
 }

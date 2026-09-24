@@ -7,3 +7,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+:root {
+  --text-white: #fff;
+  --bg-white: var(--text-white);
+  --bg-orange: orange;
+}

@@ -8,7 +8,7 @@
 }
 
 .show-answer:hover {
-  background-color: orange;
+  background-color: var(--bg-orange);
 }
 .answer-toggle {
   display: none;
@@ -21,6 +21,7 @@
 .answer-toggle:checked ~ .answer {
   display: block;
 }
+
 .answer-toggle:checked ~ .answer_title {
   display: none;
 }
