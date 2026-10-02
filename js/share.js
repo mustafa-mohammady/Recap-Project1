@@ -22,9 +22,9 @@ if (answerButton)
     button.addEventListener("click", () => {
       document.querySelectorAll(".answer").forEach((an) => {
         if (an !== current_answer) {
-          an.setAttribute("hidden", "hidden");
           const label = an.parentElement.querySelector(".show-answer");
           label.textContent = "Show Answer";
+          an.setAttribute("hidden", "hidden");
         }
       });
 
