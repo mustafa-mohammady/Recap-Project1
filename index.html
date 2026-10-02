@@ -16,48 +16,57 @@
       <h1 class="quiz-title">Quiz App</h1>
     </header>
     <main>
-      <div class="question-card">
-        <i class="fa-regular fa-bookmark q_bookmark_icon"></i>
-        <h3>What does CSS stand for?</h3>
-
-        <input type="checkbox" id="answer-1" class="answer-toggle" />
-        <span class="answer_title">Answer:</span>
-        <p class="answer"><span>Answer:</span> Cascading Style Sheets</p>
-        <label for="answer-1" class="show-answer">Show Answer</label>
-
+      <section class="card">
+        <i
+          class="fa-regular fa-bookmark q_bookmark_icon"
+          data-js="bookmark"
+        ></i>
+        <h3 class="q_title">What does CSS stand for?</h3>
+        <p class="answer">Answer: <span>Cascading Style Sheets</span></p>
+        <label for="answer" class="show-answer">Show Answer</label>
         <ul class="categories">
-          <li>html</li>
-          <li>css</li>
-          <li>flexbox</li>
+          <li>CSS</li>
+          <li>Web Development</li>
+          <li>Styling</li>
         </ul>
-      </div>
-      <div class="question-card">
-        <i class="fas fa-bookmark q_bookmark_icon"></i>
-        <h3>What is the default display property for most HTML elements?</h3>
-        <input type="checkbox" id="answer-2" class="answer-toggle" />
-        <p class="answer">Answer: block</p>
-        <label for="answer-2" class="show-answer">Show Answer</label>
-        <ul class="categories">
-          <li>html</li>
-          <li>css</li>
-          <li>flexbox</li>
-        </ul>
-      </div>
-      <div class="question-card">
-        <i class="fas fa-bookmark q_bookmark_icon"></i>
-        <h3>What is the purpose of the HTML div element?</h3>
-        <input type="checkbox" id="answer-3" class="answer-toggle" />
+      </section>
+      <section class="card">
+        <i
+          class="fa-regular fa-bookmark q_bookmark_icon"
+          data-js="bookmark"
+        ></i>
+        <h3 class="q_title">
+          What does the term "responsive web design" refer to?
+        </h3>
         <p class="answer">
-          Answer: It is a container element used to group and style content
-          together.
+          Answer:
+          <span
+            >It refers to designing web pages that adapt and display well on
+            various screen sizes and devices.
+          </span>
         </p>
-        <label for="answer-3" class="show-answer">Show Answer</label>
+        <label for="answer" class="show-answer">Show Answer</label>
         <ul class="categories">
-          <li>html</li>
-          <li>css</li>
-          <li>flexbox</li>
+          <li>Web Design</li>
+          <li>Responsive</li>
+          <li>CSS</li>
+          <li>HTML</li>
         </ul>
-      </div>
+      </section>
+      <section class="card">
+        <i
+          class="fa-regular fa-bookmark q_bookmark_icon"
+          data-js="bookmark"
+        ></i>
+        <h3 class="q_title">What does the acronym "WWW" stand for?</h3>
+        <p class="answer">Answer: <span>World Wide Web</span></p>
+        <label for="answer-1" class="show-answer">Show Answer</label>
+        <ul class="categories">
+          <li>Internet</li>
+          <li>WWW</li>
+          <li>Acronyms</li>
+        </ul>
+      </section>
     </main>
     <footer>
       <ul class="mobile-menu">
@@ -72,6 +81,11 @@
           </a>
         </li>
         <li>
+          <a href="newQuestion.html">
+            <span class="fas fa-plus menu-icon"></span>
+          </a>
+        </li>
+        <li>
           <a href="profile.html">
             <span class="fas fa-user menu-icon"></span>
           </a>
@@ -79,4 +93,5 @@
       </ul>
     </footer>
   </body>
+  <script src="./js/share.js"></script>
 </html>

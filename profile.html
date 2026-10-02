@@ -11,51 +11,67 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
   </head>
-  <body>
+  <body class="">
     <header>
       <h1 class="quiz-title">Quiz App</h1>
     </header>
     <main>
-      <div class="profile_top_container">
-        <div class="profile_img" style="text-align: left">
-          <i class="fas fa-user" style="font-size: 100px"></i>
+      <section class="card">
+        <div class="profile_top_container">
+          <div class="profile_img">
+            <div
+              style="
+                padding: 10px;
+                background-color: #f4bd3478;
+                border-radius: 50%;
+                width: 60px;
+                height: 50x;
+              "
+            >
+              <img src="./img/profile_filled.png" style="width: 60px" />
+            </div>
+          </div>
+          <div class="profile_name">
+            <h3>Mustafa Mohammady</h3>
+          </div>
         </div>
-        <div class="profile_name">
-          <h2>Mustafa Mohammady</h2>
+        <div class="about_me_container">
+          <h3>ABOUT ME</h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ut
+            blanditiis ab numquam nihil, dignissimos molestias. Reprehenderit,
+            vero quisquam architecto quod eum odio quaerat explicabo
+            necessitatibus repellat in, doloribus expedita?
+          </p>
         </div>
-      </div>
-      <div class="about_me_container">
-        <h2>About Me</h2>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ut
-          blanditiis ab numquam nihil, dignissimos molestias. Reprehenderit,
-          vero quisquam architecto quod eum odio quaerat explicabo
-          necessitatibus repellat in, doloribus expedita?
-        </p>
-      </div>
-      <br />
-      <div class="profile_bottom_container">
-        <button type="button">
-          <span class="fas fa-question"></span>
-          12
-        </button>
-        <button type="button">
-          <span class="fas fa-bookmark"></span>
-          4
-        </button>
-      </div>
-      <br />
-      <br />
-
-      <h2 style="text-align: left">Settings</h2>
-      <br />
-      <br />
-      <div style="display: flex; justify-content: space-between">
-        <h2>Dark Mode</h2>
-        <input type="checkbox" id="theme-toggle" />
-        <label for="theme-toggle" class="switch"></label>
-      </div>
+        <div class="profile_bottom_container">
+          <button type="button">
+            <i class="fa-solid fa-file-circle-question"></i>
+            12
+          </button>
+          <button type="button">
+            <i class="fas fa-bookmark"></i>
+            4
+          </button>
+        </div>
+      </section>
+      <section class="card switch_card">
+        <h2 style="width: 100%; text-align: left">Settings</h2>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            width: 100%;
+            margin-top: 20px;
+          "
+        >
+          <p>Dark Mode</p>
+          <input type="checkbox" id="theme-toggle" data-js="themeToggle" />
+          <label for="theme-toggle" class="switch"></label>
+        </div>
+      </section>
     </main>
     <footer>
       <ul class="mobile-menu">
@@ -69,6 +85,11 @@
             <span class="fas fa-bookmark menu-icon"></span>
           </a>
         </li>
+        <li>
+          <a href="newQuestion.html">
+            <span class="fas fa-plus menu-icon"></span>
+          </a>
+        </li>
         <li class="active">
           <a href="profile.html">
             <span class="fas fa-user menu-icon"></span>
@@ -77,4 +98,5 @@
       </ul>
     </footer>
   </body>
+  <script src="./js/index.js"></script>
 </html>

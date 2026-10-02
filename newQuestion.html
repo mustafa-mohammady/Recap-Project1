@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="quiz-title">Quiz App</h1>
+    </header>
+    <main data-js="main_container">
+      <section class="card">
+        <form data-js="question_form" novalidate>
+          <label for="question">Your Question:</label>
+          <textarea
+            rows="3"
+            name="question"
+            data-js="question_data"
+            required
+            maxlength="150"
+          ></textarea>
+          <p
+            style="text-align: right; padding-top: 10px"
+            data-js="question_character_left"
+          ></p>
+
+          <label for="answer">Your Answer:</label>
+          <textarea
+            rows="3"
+            name="answer"
+            data-js="answer_data"
+            required
+            maxlength="150"
+          ></textarea>
+          <p
+            style="text-align: right; padding-top: 10px"
+            data-js="answer_character_left"
+          ></p>
+
+          <label for="tag_data">Tag:</label>
+          <input type="text" name="tag" data-js="tag_data" required />
+
+          <input type="submit" name="btn_submit" class="btn_submit" />
+        </form>
+      </section>
+      <section class="toast_message">
+        <p><i class="fa-solid fa-trash"></i> Question Deleted Successfully</p>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="mobile-menu">
+        <li>
+          <a href="index.html">
+            <span class="fas fa-home menu-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a href="bookmarks.html">
+            <span class="fas fa-bookmark menu-icon"></span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="newQuestion.html">
+            <span class="fas fa-plus menu-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html">
+            <span class="fas fa-user menu-icon"></span>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script src="./js/share.js"></script>
+  <script src="./js/index.js"></script>
+</html>

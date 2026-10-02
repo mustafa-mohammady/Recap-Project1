@@ -4,12 +4,35 @@
   text-align: center;
   margin: 0px;
 }
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 :root {
+  --bg-color: rgb(240 240 240);
   --text-white: #fff;
   --bg-white: var(--text-white);
   --bg-orange: orange;
+  --text-color: #1e293b;
+  --gold-color: rgb(184 134 11);
+  --muted-color: rgb(166 145 94);
+  --bg-dark: black;
+  --color-light: white;
+  --card-bg: white;
+  --border-color: #e2e8f0;
+  --shadow-color: rgb(232, 232, 232);
+  --header-bg: white;
+  --header-border: #e2e8f0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.darkTheme {
+  --bg-color: var(--bg-dark);
+  --text-color: var(--color-light);
+  --card-bg: #1e1e1e;
+  --border-color: #323232;
+  --shadow-color: black;
+  --header-bg: black;
+  --header-border: rgb(166 145 94);
 }

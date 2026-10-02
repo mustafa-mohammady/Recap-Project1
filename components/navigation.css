@@ -2,10 +2,10 @@ footer {
   position: fixed;
   bottom: 0%;
   width: 100%;
-  border-top: 1px solid rgb(242, 242, 242);
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  background-color: white;
+  border-top: 1px solid var(--header-border);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: var(--header-bg);
   z-index: 10;
 }
 .mobile-menu {
@@ -14,22 +14,25 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding: 0px;
+
+  margin-top: 2.5px;
 }
 
 .menu-icon {
-  font-size: 32px;
-  padding: 10px;
+  font-size: 30px;
+  padding: 15px 20px;
   border-radius: 10px;
-  color: #5b00af;
+  color: var(--text-color);
 }
 .menu-icon:hover {
-  background-color: #eee;
-  color: black;
+  background-color: var(--bg-color);
+  color: var(--gold-color);
 }
-.menu-icon:active {
-  color: black;
-}
+
 .active {
-  background-color: orangered;
+  background-color: rgba(182, 149, 68, 0.16);
   border-radius: 10px;
+}
+.active > a > span {
+  color: var(--gold-color);
 }

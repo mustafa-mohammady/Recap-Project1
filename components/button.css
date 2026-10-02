@@ -1,29 +1,15 @@
 .show-answer {
   padding: 10px;
-  background: darkorange;
+  background: var(--gold-color);
   border: none;
   border-radius: 10px;
   cursor: pointer;
   margin-top: 10px;
+  color: white;
 }
 
 .show-answer:hover {
-  background-color: var(--bg-orange);
-}
-.answer-toggle {
-  display: none;
-}
-
-.answer {
-  display: none;
-}
-
-.answer-toggle:checked ~ .answer {
-  display: block;
-}
-
-.answer-toggle:checked ~ .answer_title {
-  display: none;
+  background-color: color-mix(in srgb, var(--gold-color) 80%, black);
 }
 
 .q_bookmark_icon {
@@ -31,4 +17,27 @@
   top: -15px;
   right: 20px;
   font-size: 32px;
+  cursor: pointer;
+}
+
+.delete_question_icon {
+  color: rgb(190, 0, 0);
+  position: absolute;
+  z-index: 1;
+  bottom: 30px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(248, 223, 223);
+  border-radius: 10%;
+  padding: 9px;
+}
+.delete_question_icon:hover {
+  cursor: pointer;
+  color: brown;
+}
+
+.answer {
+  margin: 5px;
+  padding-top: 10px;
 }
